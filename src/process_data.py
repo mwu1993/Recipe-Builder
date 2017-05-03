@@ -19,7 +19,7 @@ def consolidate_ingredients(data):
 
 def save_pos(ingredients):
     pos_map = {}
-    for ingredient in ingredients.keys()[:10]:
+    for ingredient in ingredients.keys():
         tb = TextBlob(ingredient)
         for word, pos in tb.pos_tags:
             pos_map[word] = pos
